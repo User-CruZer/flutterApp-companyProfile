@@ -12,7 +12,6 @@ class CompanyInfo {
   final String? country;
   final String? website;
   final String? instagram;
-  final String? twitter;
   final String? discord;
   final int? foundedYear;
   final int totalCustomers;
@@ -34,7 +33,6 @@ class CompanyInfo {
     this.country,
     this.website,
     this.instagram,
-    this.twitter,
     this.discord,
     this.foundedYear,
     this.totalCustomers = 0,

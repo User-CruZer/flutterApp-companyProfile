@@ -123,16 +123,15 @@ class CompanyProfileScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         _contactItem(Icons.email, 'Email', company.email),
-                        _contactItem(Icons.phone, 'Telepon', company.phone),
+
                         if (company.whatsapp != null)
-                          _contactItem(Icons.chat,
+                          _contactItem(FontAwesomeIcons.whatsapp,
                               'WhatsApp', company.whatsapp!),
 
                       ],
                     ),
                   ),
                   if (company.instagram != null ||
-                      company.twitter != null ||
                       company.discord != null) ...[
                     const SizedBox(height: 24),
                     const Text(
@@ -147,11 +146,8 @@ class CompanyProfileScreen extends StatelessWidget {
                       child: Column(
                         children: [
                           if (company.instagram != null)
-                            _contactItem(Icons.camera_alt,
+                            _contactItem(FontAwesomeIcons.instagram,
                                 'Instagram', '@${company.instagram}'),
-                          if (company.twitter != null)
-                            _contactItem(Icons.alternate_email,
-                                'Twitter', '@${company.twitter}'),
                           if (company.discord != null)
                             _contactItem(FontAwesomeIcons.discord,
                                 'Discord', company.discord!),

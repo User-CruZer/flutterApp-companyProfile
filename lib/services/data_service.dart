@@ -19,7 +19,6 @@ class DataService {
       country: 'Indonesia',
       website: 'https://jasajoki.com',
       instagram: 'jasajoki_id',
-      twitter: 'jasajoki_id',
       discord: 'discord.gg/jasajoki',
       foundedYear: 2023,
       totalCustomers: 1500,
